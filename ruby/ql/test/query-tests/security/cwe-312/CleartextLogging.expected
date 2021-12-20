@@ -1,0 +1,203 @@
+edges
+| logging.rb:6:21:6:28 | password :  | logging.rb:8:21:8:28 | password |
+| logging.rb:6:21:6:28 | password :  | logging.rb:8:21:8:28 | password :  |
+| logging.rb:6:21:6:28 | password :  | logging.rb:10:21:10:28 | password |
+| logging.rb:6:21:6:28 | password :  | logging.rb:10:21:10:28 | password :  |
+| logging.rb:6:21:6:28 | password :  | logging.rb:12:20:12:27 | password |
+| logging.rb:6:21:6:28 | password :  | logging.rb:12:20:12:27 | password :  |
+| logging.rb:6:21:6:28 | password :  | logging.rb:14:23:14:30 | password |
+| logging.rb:6:21:6:28 | password :  | logging.rb:14:23:14:30 | password :  |
+| logging.rb:6:21:6:28 | password :  | logging.rb:16:20:16:27 | password |
+| logging.rb:6:21:6:28 | password :  | logging.rb:16:20:16:27 | password :  |
+| logging.rb:6:21:6:28 | password :  | logging.rb:19:33:19:40 | password |
+| logging.rb:6:21:6:28 | password :  | logging.rb:19:33:19:40 | password :  |
+| logging.rb:6:21:6:28 | password :  | logging.rb:21:44:21:51 | password |
+| logging.rb:6:21:6:28 | password :  | logging.rb:21:44:21:51 | password :  |
+| logging.rb:6:21:6:28 | password :  | logging.rb:23:33:23:40 | password |
+| logging.rb:6:21:6:28 | password :  | logging.rb:23:33:23:40 | password :  |
+| logging.rb:6:21:6:28 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" |
+| logging.rb:6:21:6:28 | password :  | logging.rb:28:26:28:33 | password |
+| logging.rb:8:21:8:28 | password :  | logging.rb:10:21:10:28 | password |
+| logging.rb:8:21:8:28 | password :  | logging.rb:10:21:10:28 | password :  |
+| logging.rb:8:21:8:28 | password :  | logging.rb:12:20:12:27 | password |
+| logging.rb:8:21:8:28 | password :  | logging.rb:12:20:12:27 | password :  |
+| logging.rb:8:21:8:28 | password :  | logging.rb:14:23:14:30 | password |
+| logging.rb:8:21:8:28 | password :  | logging.rb:14:23:14:30 | password :  |
+| logging.rb:8:21:8:28 | password :  | logging.rb:16:20:16:27 | password |
+| logging.rb:8:21:8:28 | password :  | logging.rb:16:20:16:27 | password :  |
+| logging.rb:8:21:8:28 | password :  | logging.rb:19:33:19:40 | password |
+| logging.rb:8:21:8:28 | password :  | logging.rb:19:33:19:40 | password :  |
+| logging.rb:8:21:8:28 | password :  | logging.rb:21:44:21:51 | password |
+| logging.rb:8:21:8:28 | password :  | logging.rb:21:44:21:51 | password :  |
+| logging.rb:8:21:8:28 | password :  | logging.rb:23:33:23:40 | password |
+| logging.rb:8:21:8:28 | password :  | logging.rb:23:33:23:40 | password :  |
+| logging.rb:8:21:8:28 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" |
+| logging.rb:8:21:8:28 | password :  | logging.rb:28:26:28:33 | password |
+| logging.rb:10:21:10:28 | password :  | logging.rb:12:20:12:27 | password |
+| logging.rb:10:21:10:28 | password :  | logging.rb:12:20:12:27 | password :  |
+| logging.rb:10:21:10:28 | password :  | logging.rb:14:23:14:30 | password |
+| logging.rb:10:21:10:28 | password :  | logging.rb:14:23:14:30 | password :  |
+| logging.rb:10:21:10:28 | password :  | logging.rb:16:20:16:27 | password |
+| logging.rb:10:21:10:28 | password :  | logging.rb:16:20:16:27 | password :  |
+| logging.rb:10:21:10:28 | password :  | logging.rb:19:33:19:40 | password |
+| logging.rb:10:21:10:28 | password :  | logging.rb:19:33:19:40 | password :  |
+| logging.rb:10:21:10:28 | password :  | logging.rb:21:44:21:51 | password |
+| logging.rb:10:21:10:28 | password :  | logging.rb:21:44:21:51 | password :  |
+| logging.rb:10:21:10:28 | password :  | logging.rb:23:33:23:40 | password |
+| logging.rb:10:21:10:28 | password :  | logging.rb:23:33:23:40 | password :  |
+| logging.rb:10:21:10:28 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" |
+| logging.rb:10:21:10:28 | password :  | logging.rb:28:26:28:33 | password |
+| logging.rb:12:20:12:27 | password :  | logging.rb:14:23:14:30 | password |
+| logging.rb:12:20:12:27 | password :  | logging.rb:14:23:14:30 | password :  |
+| logging.rb:12:20:12:27 | password :  | logging.rb:16:20:16:27 | password |
+| logging.rb:12:20:12:27 | password :  | logging.rb:16:20:16:27 | password :  |
+| logging.rb:12:20:12:27 | password :  | logging.rb:19:33:19:40 | password |
+| logging.rb:12:20:12:27 | password :  | logging.rb:19:33:19:40 | password :  |
+| logging.rb:12:20:12:27 | password :  | logging.rb:21:44:21:51 | password |
+| logging.rb:12:20:12:27 | password :  | logging.rb:21:44:21:51 | password :  |
+| logging.rb:12:20:12:27 | password :  | logging.rb:23:33:23:40 | password |
+| logging.rb:12:20:12:27 | password :  | logging.rb:23:33:23:40 | password :  |
+| logging.rb:12:20:12:27 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" |
+| logging.rb:12:20:12:27 | password :  | logging.rb:28:26:28:33 | password |
+| logging.rb:14:23:14:30 | password :  | logging.rb:16:20:16:27 | password |
+| logging.rb:14:23:14:30 | password :  | logging.rb:16:20:16:27 | password :  |
+| logging.rb:14:23:14:30 | password :  | logging.rb:19:33:19:40 | password |
+| logging.rb:14:23:14:30 | password :  | logging.rb:19:33:19:40 | password :  |
+| logging.rb:14:23:14:30 | password :  | logging.rb:21:44:21:51 | password |
+| logging.rb:14:23:14:30 | password :  | logging.rb:21:44:21:51 | password :  |
+| logging.rb:14:23:14:30 | password :  | logging.rb:23:33:23:40 | password |
+| logging.rb:14:23:14:30 | password :  | logging.rb:23:33:23:40 | password :  |
+| logging.rb:14:23:14:30 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" |
+| logging.rb:14:23:14:30 | password :  | logging.rb:28:26:28:33 | password |
+| logging.rb:16:20:16:27 | password :  | logging.rb:19:33:19:40 | password |
+| logging.rb:16:20:16:27 | password :  | logging.rb:19:33:19:40 | password :  |
+| logging.rb:16:20:16:27 | password :  | logging.rb:21:44:21:51 | password |
+| logging.rb:16:20:16:27 | password :  | logging.rb:21:44:21:51 | password :  |
+| logging.rb:16:20:16:27 | password :  | logging.rb:23:33:23:40 | password |
+| logging.rb:16:20:16:27 | password :  | logging.rb:23:33:23:40 | password :  |
+| logging.rb:16:20:16:27 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" |
+| logging.rb:16:20:16:27 | password :  | logging.rb:28:26:28:33 | password |
+| logging.rb:19:33:19:40 | password :  | logging.rb:21:44:21:51 | password |
+| logging.rb:19:33:19:40 | password :  | logging.rb:21:44:21:51 | password :  |
+| logging.rb:19:33:19:40 | password :  | logging.rb:23:33:23:40 | password |
+| logging.rb:19:33:19:40 | password :  | logging.rb:23:33:23:40 | password :  |
+| logging.rb:19:33:19:40 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" |
+| logging.rb:19:33:19:40 | password :  | logging.rb:28:26:28:33 | password |
+| logging.rb:21:44:21:51 | password :  | logging.rb:23:33:23:40 | password |
+| logging.rb:21:44:21:51 | password :  | logging.rb:23:33:23:40 | password :  |
+| logging.rb:21:44:21:51 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" |
+| logging.rb:21:44:21:51 | password :  | logging.rb:28:26:28:33 | password |
+| logging.rb:23:33:23:40 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" |
+| logging.rb:23:33:23:40 | password :  | logging.rb:28:26:28:33 | password |
+| logging.rb:26:25:26:32 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" |
+| logging.rb:26:25:26:32 | password :  | logging.rb:28:26:28:33 | password |
+| logging.rb:41:1:41:19 | password_masked_sub :  | logging.rb:45:20:45:38 | password_masked_sub |
+| logging.rb:42:1:42:20 | password_masked_gsub :  | logging.rb:47:20:47:39 | password_masked_gsub |
+| logging.rb:51:1:51:31 | password_masked_ineffective_sub :  | logging.rb:55:20:55:50 | password_masked_ineffective_sub |
+| logging.rb:52:1:52:32 | password_masked_ineffective_gsub :  | logging.rb:57:20:57:51 | password_masked_ineffective_gsub |
+nodes
+| logging.rb:6:21:6:28 | password | semmle.label | password |
+| logging.rb:6:21:6:28 | password :  | semmle.label | password :  |
+| logging.rb:8:21:8:28 | password | semmle.label | password |
+| logging.rb:8:21:8:28 | password :  | semmle.label | password :  |
+| logging.rb:10:21:10:28 | password | semmle.label | password |
+| logging.rb:10:21:10:28 | password :  | semmle.label | password :  |
+| logging.rb:12:20:12:27 | password | semmle.label | password |
+| logging.rb:12:20:12:27 | password :  | semmle.label | password :  |
+| logging.rb:14:23:14:30 | password | semmle.label | password |
+| logging.rb:14:23:14:30 | password :  | semmle.label | password :  |
+| logging.rb:16:20:16:27 | password | semmle.label | password |
+| logging.rb:16:20:16:27 | password :  | semmle.label | password :  |
+| logging.rb:19:33:19:40 | password | semmle.label | password |
+| logging.rb:19:33:19:40 | password :  | semmle.label | password :  |
+| logging.rb:21:44:21:51 | password | semmle.label | password |
+| logging.rb:21:44:21:51 | password :  | semmle.label | password :  |
+| logging.rb:23:33:23:40 | password | semmle.label | password |
+| logging.rb:23:33:23:40 | password :  | semmle.label | password :  |
+| logging.rb:26:18:26:34 | "pw: #{...}" | semmle.label | "pw: #{...}" |
+| logging.rb:26:25:26:32 | password :  | semmle.label | password :  |
+| logging.rb:28:26:28:33 | password | semmle.label | password |
+| logging.rb:41:1:41:19 | password_masked_sub :  | semmle.label | password_masked_sub :  |
+| logging.rb:42:1:42:20 | password_masked_gsub :  | semmle.label | password_masked_gsub :  |
+| logging.rb:45:20:45:38 | password_masked_sub | semmle.label | password_masked_sub |
+| logging.rb:47:20:47:39 | password_masked_gsub | semmle.label | password_masked_gsub |
+| logging.rb:51:1:51:31 | password_masked_ineffective_sub :  | semmle.label | password_masked_ineffective_sub :  |
+| logging.rb:52:1:52:32 | password_masked_ineffective_gsub :  | semmle.label | password_masked_ineffective_gsub :  |
+| logging.rb:55:20:55:50 | password_masked_ineffective_sub | semmle.label | password_masked_ineffective_sub |
+| logging.rb:57:20:57:51 | password_masked_ineffective_gsub | semmle.label | password_masked_ineffective_gsub |
+subpaths
+#select
+| logging.rb:6:21:6:28 | password | logging.rb:6:21:6:28 | password | logging.rb:6:21:6:28 | password | $@ is logged here, src: logging.rb@6:21:6:28 sink: logging.rb@6:21:6:28 | logging.rb:6:21:6:28 | password | Sensitive data |
+| logging.rb:8:21:8:28 | password | logging.rb:6:21:6:28 | password :  | logging.rb:8:21:8:28 | password | $@ is logged here, src: logging.rb@6:21:6:28 sink: logging.rb@8:21:8:28 | logging.rb:6:21:6:28 | password | Sensitive data |
+| logging.rb:8:21:8:28 | password | logging.rb:8:21:8:28 | password | logging.rb:8:21:8:28 | password | $@ is logged here, src: logging.rb@8:21:8:28 sink: logging.rb@8:21:8:28 | logging.rb:8:21:8:28 | password | Sensitive data |
+| logging.rb:10:21:10:28 | password | logging.rb:6:21:6:28 | password :  | logging.rb:10:21:10:28 | password | $@ is logged here, src: logging.rb@6:21:6:28 sink: logging.rb@10:21:10:28 | logging.rb:6:21:6:28 | password | Sensitive data |
+| logging.rb:10:21:10:28 | password | logging.rb:8:21:8:28 | password :  | logging.rb:10:21:10:28 | password | $@ is logged here, src: logging.rb@8:21:8:28 sink: logging.rb@10:21:10:28 | logging.rb:8:21:8:28 | password | Sensitive data |
+| logging.rb:10:21:10:28 | password | logging.rb:10:21:10:28 | password | logging.rb:10:21:10:28 | password | $@ is logged here, src: logging.rb@10:21:10:28 sink: logging.rb@10:21:10:28 | logging.rb:10:21:10:28 | password | Sensitive data |
+| logging.rb:12:20:12:27 | password | logging.rb:6:21:6:28 | password :  | logging.rb:12:20:12:27 | password | $@ is logged here, src: logging.rb@6:21:6:28 sink: logging.rb@12:20:12:27 | logging.rb:6:21:6:28 | password | Sensitive data |
+| logging.rb:12:20:12:27 | password | logging.rb:8:21:8:28 | password :  | logging.rb:12:20:12:27 | password | $@ is logged here, src: logging.rb@8:21:8:28 sink: logging.rb@12:20:12:27 | logging.rb:8:21:8:28 | password | Sensitive data |
+| logging.rb:12:20:12:27 | password | logging.rb:10:21:10:28 | password :  | logging.rb:12:20:12:27 | password | $@ is logged here, src: logging.rb@10:21:10:28 sink: logging.rb@12:20:12:27 | logging.rb:10:21:10:28 | password | Sensitive data |
+| logging.rb:12:20:12:27 | password | logging.rb:12:20:12:27 | password | logging.rb:12:20:12:27 | password | $@ is logged here, src: logging.rb@12:20:12:27 sink: logging.rb@12:20:12:27 | logging.rb:12:20:12:27 | password | Sensitive data |
+| logging.rb:14:23:14:30 | password | logging.rb:6:21:6:28 | password :  | logging.rb:14:23:14:30 | password | $@ is logged here, src: logging.rb@6:21:6:28 sink: logging.rb@14:23:14:30 | logging.rb:6:21:6:28 | password | Sensitive data |
+| logging.rb:14:23:14:30 | password | logging.rb:8:21:8:28 | password :  | logging.rb:14:23:14:30 | password | $@ is logged here, src: logging.rb@8:21:8:28 sink: logging.rb@14:23:14:30 | logging.rb:8:21:8:28 | password | Sensitive data |
+| logging.rb:14:23:14:30 | password | logging.rb:10:21:10:28 | password :  | logging.rb:14:23:14:30 | password | $@ is logged here, src: logging.rb@10:21:10:28 sink: logging.rb@14:23:14:30 | logging.rb:10:21:10:28 | password | Sensitive data |
+| logging.rb:14:23:14:30 | password | logging.rb:12:20:12:27 | password :  | logging.rb:14:23:14:30 | password | $@ is logged here, src: logging.rb@12:20:12:27 sink: logging.rb@14:23:14:30 | logging.rb:12:20:12:27 | password | Sensitive data |
+| logging.rb:14:23:14:30 | password | logging.rb:14:23:14:30 | password | logging.rb:14:23:14:30 | password | $@ is logged here, src: logging.rb@14:23:14:30 sink: logging.rb@14:23:14:30 | logging.rb:14:23:14:30 | password | Sensitive data |
+| logging.rb:16:20:16:27 | password | logging.rb:6:21:6:28 | password :  | logging.rb:16:20:16:27 | password | $@ is logged here, src: logging.rb@6:21:6:28 sink: logging.rb@16:20:16:27 | logging.rb:6:21:6:28 | password | Sensitive data |
+| logging.rb:16:20:16:27 | password | logging.rb:8:21:8:28 | password :  | logging.rb:16:20:16:27 | password | $@ is logged here, src: logging.rb@8:21:8:28 sink: logging.rb@16:20:16:27 | logging.rb:8:21:8:28 | password | Sensitive data |
+| logging.rb:16:20:16:27 | password | logging.rb:10:21:10:28 | password :  | logging.rb:16:20:16:27 | password | $@ is logged here, src: logging.rb@10:21:10:28 sink: logging.rb@16:20:16:27 | logging.rb:10:21:10:28 | password | Sensitive data |
+| logging.rb:16:20:16:27 | password | logging.rb:12:20:12:27 | password :  | logging.rb:16:20:16:27 | password | $@ is logged here, src: logging.rb@12:20:12:27 sink: logging.rb@16:20:16:27 | logging.rb:12:20:12:27 | password | Sensitive data |
+| logging.rb:16:20:16:27 | password | logging.rb:14:23:14:30 | password :  | logging.rb:16:20:16:27 | password | $@ is logged here, src: logging.rb@14:23:14:30 sink: logging.rb@16:20:16:27 | logging.rb:14:23:14:30 | password | Sensitive data |
+| logging.rb:16:20:16:27 | password | logging.rb:16:20:16:27 | password | logging.rb:16:20:16:27 | password | $@ is logged here, src: logging.rb@16:20:16:27 sink: logging.rb@16:20:16:27 | logging.rb:16:20:16:27 | password | Sensitive data |
+| logging.rb:19:33:19:40 | password | logging.rb:6:21:6:28 | password :  | logging.rb:19:33:19:40 | password | $@ is logged here, src: logging.rb@6:21:6:28 sink: logging.rb@19:33:19:40 | logging.rb:6:21:6:28 | password | Sensitive data |
+| logging.rb:19:33:19:40 | password | logging.rb:8:21:8:28 | password :  | logging.rb:19:33:19:40 | password | $@ is logged here, src: logging.rb@8:21:8:28 sink: logging.rb@19:33:19:40 | logging.rb:8:21:8:28 | password | Sensitive data |
+| logging.rb:19:33:19:40 | password | logging.rb:10:21:10:28 | password :  | logging.rb:19:33:19:40 | password | $@ is logged here, src: logging.rb@10:21:10:28 sink: logging.rb@19:33:19:40 | logging.rb:10:21:10:28 | password | Sensitive data |
+| logging.rb:19:33:19:40 | password | logging.rb:12:20:12:27 | password :  | logging.rb:19:33:19:40 | password | $@ is logged here, src: logging.rb@12:20:12:27 sink: logging.rb@19:33:19:40 | logging.rb:12:20:12:27 | password | Sensitive data |
+| logging.rb:19:33:19:40 | password | logging.rb:14:23:14:30 | password :  | logging.rb:19:33:19:40 | password | $@ is logged here, src: logging.rb@14:23:14:30 sink: logging.rb@19:33:19:40 | logging.rb:14:23:14:30 | password | Sensitive data |
+| logging.rb:19:33:19:40 | password | logging.rb:16:20:16:27 | password :  | logging.rb:19:33:19:40 | password | $@ is logged here, src: logging.rb@16:20:16:27 sink: logging.rb@19:33:19:40 | logging.rb:16:20:16:27 | password | Sensitive data |
+| logging.rb:19:33:19:40 | password | logging.rb:19:33:19:40 | password | logging.rb:19:33:19:40 | password | $@ is logged here, src: logging.rb@19:33:19:40 sink: logging.rb@19:33:19:40 | logging.rb:19:33:19:40 | password | Sensitive data |
+| logging.rb:21:44:21:51 | password | logging.rb:6:21:6:28 | password :  | logging.rb:21:44:21:51 | password | $@ is logged here, src: logging.rb@6:21:6:28 sink: logging.rb@21:44:21:51 | logging.rb:6:21:6:28 | password | Sensitive data |
+| logging.rb:21:44:21:51 | password | logging.rb:8:21:8:28 | password :  | logging.rb:21:44:21:51 | password | $@ is logged here, src: logging.rb@8:21:8:28 sink: logging.rb@21:44:21:51 | logging.rb:8:21:8:28 | password | Sensitive data |
+| logging.rb:21:44:21:51 | password | logging.rb:10:21:10:28 | password :  | logging.rb:21:44:21:51 | password | $@ is logged here, src: logging.rb@10:21:10:28 sink: logging.rb@21:44:21:51 | logging.rb:10:21:10:28 | password | Sensitive data |
+| logging.rb:21:44:21:51 | password | logging.rb:12:20:12:27 | password :  | logging.rb:21:44:21:51 | password | $@ is logged here, src: logging.rb@12:20:12:27 sink: logging.rb@21:44:21:51 | logging.rb:12:20:12:27 | password | Sensitive data |
+| logging.rb:21:44:21:51 | password | logging.rb:14:23:14:30 | password :  | logging.rb:21:44:21:51 | password | $@ is logged here, src: logging.rb@14:23:14:30 sink: logging.rb@21:44:21:51 | logging.rb:14:23:14:30 | password | Sensitive data |
+| logging.rb:21:44:21:51 | password | logging.rb:16:20:16:27 | password :  | logging.rb:21:44:21:51 | password | $@ is logged here, src: logging.rb@16:20:16:27 sink: logging.rb@21:44:21:51 | logging.rb:16:20:16:27 | password | Sensitive data |
+| logging.rb:21:44:21:51 | password | logging.rb:19:33:19:40 | password :  | logging.rb:21:44:21:51 | password | $@ is logged here, src: logging.rb@19:33:19:40 sink: logging.rb@21:44:21:51 | logging.rb:19:33:19:40 | password | Sensitive data |
+| logging.rb:21:44:21:51 | password | logging.rb:21:44:21:51 | password | logging.rb:21:44:21:51 | password | $@ is logged here, src: logging.rb@21:44:21:51 sink: logging.rb@21:44:21:51 | logging.rb:21:44:21:51 | password | Sensitive data |
+| logging.rb:23:33:23:40 | password | logging.rb:6:21:6:28 | password :  | logging.rb:23:33:23:40 | password | $@ is logged here, src: logging.rb@6:21:6:28 sink: logging.rb@23:33:23:40 | logging.rb:6:21:6:28 | password | Sensitive data |
+| logging.rb:23:33:23:40 | password | logging.rb:8:21:8:28 | password :  | logging.rb:23:33:23:40 | password | $@ is logged here, src: logging.rb@8:21:8:28 sink: logging.rb@23:33:23:40 | logging.rb:8:21:8:28 | password | Sensitive data |
+| logging.rb:23:33:23:40 | password | logging.rb:10:21:10:28 | password :  | logging.rb:23:33:23:40 | password | $@ is logged here, src: logging.rb@10:21:10:28 sink: logging.rb@23:33:23:40 | logging.rb:10:21:10:28 | password | Sensitive data |
+| logging.rb:23:33:23:40 | password | logging.rb:12:20:12:27 | password :  | logging.rb:23:33:23:40 | password | $@ is logged here, src: logging.rb@12:20:12:27 sink: logging.rb@23:33:23:40 | logging.rb:12:20:12:27 | password | Sensitive data |
+| logging.rb:23:33:23:40 | password | logging.rb:14:23:14:30 | password :  | logging.rb:23:33:23:40 | password | $@ is logged here, src: logging.rb@14:23:14:30 sink: logging.rb@23:33:23:40 | logging.rb:14:23:14:30 | password | Sensitive data |
+| logging.rb:23:33:23:40 | password | logging.rb:16:20:16:27 | password :  | logging.rb:23:33:23:40 | password | $@ is logged here, src: logging.rb@16:20:16:27 sink: logging.rb@23:33:23:40 | logging.rb:16:20:16:27 | password | Sensitive data |
+| logging.rb:23:33:23:40 | password | logging.rb:19:33:19:40 | password :  | logging.rb:23:33:23:40 | password | $@ is logged here, src: logging.rb@19:33:19:40 sink: logging.rb@23:33:23:40 | logging.rb:19:33:19:40 | password | Sensitive data |
+| logging.rb:23:33:23:40 | password | logging.rb:21:44:21:51 | password :  | logging.rb:23:33:23:40 | password | $@ is logged here, src: logging.rb@21:44:21:51 sink: logging.rb@23:33:23:40 | logging.rb:21:44:21:51 | password | Sensitive data |
+| logging.rb:23:33:23:40 | password | logging.rb:23:33:23:40 | password | logging.rb:23:33:23:40 | password | $@ is logged here, src: logging.rb@23:33:23:40 sink: logging.rb@23:33:23:40 | logging.rb:23:33:23:40 | password | Sensitive data |
+| logging.rb:26:18:26:34 | "pw: #{...}" | logging.rb:6:21:6:28 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" | $@ is logged here, src: logging.rb@6:21:6:28 sink: logging.rb@26:18:26:34 | logging.rb:6:21:6:28 | password | Sensitive data |
+| logging.rb:26:18:26:34 | "pw: #{...}" | logging.rb:8:21:8:28 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" | $@ is logged here, src: logging.rb@8:21:8:28 sink: logging.rb@26:18:26:34 | logging.rb:8:21:8:28 | password | Sensitive data |
+| logging.rb:26:18:26:34 | "pw: #{...}" | logging.rb:10:21:10:28 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" | $@ is logged here, src: logging.rb@10:21:10:28 sink: logging.rb@26:18:26:34 | logging.rb:10:21:10:28 | password | Sensitive data |
+| logging.rb:26:18:26:34 | "pw: #{...}" | logging.rb:12:20:12:27 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" | $@ is logged here, src: logging.rb@12:20:12:27 sink: logging.rb@26:18:26:34 | logging.rb:12:20:12:27 | password | Sensitive data |
+| logging.rb:26:18:26:34 | "pw: #{...}" | logging.rb:14:23:14:30 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" | $@ is logged here, src: logging.rb@14:23:14:30 sink: logging.rb@26:18:26:34 | logging.rb:14:23:14:30 | password | Sensitive data |
+| logging.rb:26:18:26:34 | "pw: #{...}" | logging.rb:16:20:16:27 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" | $@ is logged here, src: logging.rb@16:20:16:27 sink: logging.rb@26:18:26:34 | logging.rb:16:20:16:27 | password | Sensitive data |
+| logging.rb:26:18:26:34 | "pw: #{...}" | logging.rb:19:33:19:40 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" | $@ is logged here, src: logging.rb@19:33:19:40 sink: logging.rb@26:18:26:34 | logging.rb:19:33:19:40 | password | Sensitive data |
+| logging.rb:26:18:26:34 | "pw: #{...}" | logging.rb:21:44:21:51 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" | $@ is logged here, src: logging.rb@21:44:21:51 sink: logging.rb@26:18:26:34 | logging.rb:21:44:21:51 | password | Sensitive data |
+| logging.rb:26:18:26:34 | "pw: #{...}" | logging.rb:23:33:23:40 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" | $@ is logged here, src: logging.rb@23:33:23:40 sink: logging.rb@26:18:26:34 | logging.rb:23:33:23:40 | password | Sensitive data |
+| logging.rb:26:18:26:34 | "pw: #{...}" | logging.rb:26:25:26:32 | password :  | logging.rb:26:18:26:34 | "pw: #{...}" | $@ is logged here, src: logging.rb@26:25:26:32 sink: logging.rb@26:18:26:34 | logging.rb:26:25:26:32 | password | Sensitive data |
+| logging.rb:28:26:28:33 | password | logging.rb:6:21:6:28 | password :  | logging.rb:28:26:28:33 | password | $@ is logged here, src: logging.rb@6:21:6:28 sink: logging.rb@28:26:28:33 | logging.rb:6:21:6:28 | password | Sensitive data |
+| logging.rb:28:26:28:33 | password | logging.rb:8:21:8:28 | password :  | logging.rb:28:26:28:33 | password | $@ is logged here, src: logging.rb@8:21:8:28 sink: logging.rb@28:26:28:33 | logging.rb:8:21:8:28 | password | Sensitive data |
+| logging.rb:28:26:28:33 | password | logging.rb:10:21:10:28 | password :  | logging.rb:28:26:28:33 | password | $@ is logged here, src: logging.rb@10:21:10:28 sink: logging.rb@28:26:28:33 | logging.rb:10:21:10:28 | password | Sensitive data |
+| logging.rb:28:26:28:33 | password | logging.rb:12:20:12:27 | password :  | logging.rb:28:26:28:33 | password | $@ is logged here, src: logging.rb@12:20:12:27 sink: logging.rb@28:26:28:33 | logging.rb:12:20:12:27 | password | Sensitive data |
+| logging.rb:28:26:28:33 | password | logging.rb:14:23:14:30 | password :  | logging.rb:28:26:28:33 | password | $@ is logged here, src: logging.rb@14:23:14:30 sink: logging.rb@28:26:28:33 | logging.rb:14:23:14:30 | password | Sensitive data |
+| logging.rb:28:26:28:33 | password | logging.rb:16:20:16:27 | password :  | logging.rb:28:26:28:33 | password | $@ is logged here, src: logging.rb@16:20:16:27 sink: logging.rb@28:26:28:33 | logging.rb:16:20:16:27 | password | Sensitive data |
+| logging.rb:28:26:28:33 | password | logging.rb:19:33:19:40 | password :  | logging.rb:28:26:28:33 | password | $@ is logged here, src: logging.rb@19:33:19:40 sink: logging.rb@28:26:28:33 | logging.rb:19:33:19:40 | password | Sensitive data |
+| logging.rb:28:26:28:33 | password | logging.rb:21:44:21:51 | password :  | logging.rb:28:26:28:33 | password | $@ is logged here, src: logging.rb@21:44:21:51 sink: logging.rb@28:26:28:33 | logging.rb:21:44:21:51 | password | Sensitive data |
+| logging.rb:28:26:28:33 | password | logging.rb:23:33:23:40 | password :  | logging.rb:28:26:28:33 | password | $@ is logged here, src: logging.rb@23:33:23:40 sink: logging.rb@28:26:28:33 | logging.rb:23:33:23:40 | password | Sensitive data |
+| logging.rb:28:26:28:33 | password | logging.rb:26:25:26:32 | password :  | logging.rb:28:26:28:33 | password | $@ is logged here, src: logging.rb@26:25:26:32 sink: logging.rb@28:26:28:33 | logging.rb:26:25:26:32 | password | Sensitive data |
+| logging.rb:28:26:28:33 | password | logging.rb:28:26:28:33 | password | logging.rb:28:26:28:33 | password | $@ is logged here, src: logging.rb@28:26:28:33 sink: logging.rb@28:26:28:33 | logging.rb:28:26:28:33 | password | Sensitive data |
+| logging.rb:45:20:45:38 | password_masked_sub | logging.rb:41:1:41:19 | password_masked_sub :  | logging.rb:45:20:45:38 | password_masked_sub | $@ is logged here, src: logging.rb@41:1:41:19 sink: logging.rb@45:20:45:38 | logging.rb:41:1:41:19 | password_masked_sub | Sensitive data |
+| logging.rb:45:20:45:38 | password_masked_sub | logging.rb:45:20:45:38 | password_masked_sub | logging.rb:45:20:45:38 | password_masked_sub | $@ is logged here, src: logging.rb@45:20:45:38 sink: logging.rb@45:20:45:38 | logging.rb:45:20:45:38 | password_masked_sub | Sensitive data |
+| logging.rb:47:20:47:39 | password_masked_gsub | logging.rb:42:1:42:20 | password_masked_gsub :  | logging.rb:47:20:47:39 | password_masked_gsub | $@ is logged here, src: logging.rb@42:1:42:20 sink: logging.rb@47:20:47:39 | logging.rb:42:1:42:20 | password_masked_gsub | Sensitive data |
+| logging.rb:47:20:47:39 | password_masked_gsub | logging.rb:47:20:47:39 | password_masked_gsub | logging.rb:47:20:47:39 | password_masked_gsub | $@ is logged here, src: logging.rb@47:20:47:39 sink: logging.rb@47:20:47:39 | logging.rb:47:20:47:39 | password_masked_gsub | Sensitive data |
+| logging.rb:55:20:55:50 | password_masked_ineffective_sub | logging.rb:51:1:51:31 | password_masked_ineffective_sub :  | logging.rb:55:20:55:50 | password_masked_ineffective_sub | $@ is logged here, src: logging.rb@51:1:51:31 sink: logging.rb@55:20:55:50 | logging.rb:51:1:51:31 | password_masked_ineffective_sub | Sensitive data |
+| logging.rb:55:20:55:50 | password_masked_ineffective_sub | logging.rb:55:20:55:50 | password_masked_ineffective_sub | logging.rb:55:20:55:50 | password_masked_ineffective_sub | $@ is logged here, src: logging.rb@55:20:55:50 sink: logging.rb@55:20:55:50 | logging.rb:55:20:55:50 | password_masked_ineffective_sub | Sensitive data |
+| logging.rb:57:20:57:51 | password_masked_ineffective_gsub | logging.rb:52:1:52:32 | password_masked_ineffective_gsub :  | logging.rb:57:20:57:51 | password_masked_ineffective_gsub | $@ is logged here, src: logging.rb@52:1:52:32 sink: logging.rb@57:20:57:51 | logging.rb:52:1:52:32 | password_masked_ineffective_gsub | Sensitive data |
+| logging.rb:57:20:57:51 | password_masked_ineffective_gsub | logging.rb:57:20:57:51 | password_masked_ineffective_gsub | logging.rb:57:20:57:51 | password_masked_ineffective_gsub | $@ is logged here, src: logging.rb@57:20:57:51 sink: logging.rb@57:20:57:51 | logging.rb:57:20:57:51 | password_masked_ineffective_gsub | Sensitive data |
