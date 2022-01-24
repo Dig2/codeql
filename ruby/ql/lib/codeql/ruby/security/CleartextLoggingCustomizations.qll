@@ -6,6 +6,7 @@
 
 private import ruby
 private import codeql.ruby.DataFlow
+private import codeql.ruby.TaintTracking::TaintTracking
 private import codeql.ruby.Concepts
 private import codeql.ruby.dataflow.RemoteFlowSources
 private import internal.SensitiveDataHeuristics::HeuristicNames
@@ -32,7 +33,7 @@ module CleartextLogging {
   /**
    * A call to `.sub!()` or `.gsub!()` that seems to mask sensitive information.
    */
-  class MaskingReplacer extends Sanitizer, DataFlow::CallNode {
+  private class MaskingReplacer extends Sanitizer, DataFlow::CallNode {
     MaskingReplacer() {
       exists(RegExpLiteral re |
         re = this.getArgument(0).asExpr().getExpr() and
@@ -146,7 +147,7 @@ module CleartextLogging {
           this.asExpr().getExpr() = ref and
           ref.getArgument(0).getValueText() = name and
           // avoid safe values assigned to presumably unsafe names
-          exists(DataFlow::LocalSourceNode write, DataFlow::Node val | write.flowsTo(this) |
+          exists(DataFlow::LocalSourceNode write, DataFlow::Node val | localTaint(write, this) |
             hashKeyWrite(write, name, val) and
             not val instanceof NonCleartextPassword
           )
@@ -169,12 +170,24 @@ module CleartextLogging {
     override string describe() { result = "a call to " + name }
   }
 
+  private string commonLogMethodName() {
+    result = ["info", "debug", "warn", "warning", "error", "log"]
+  }
+
   /**
    * A node representing an expression whose value is logged.
    */
-  class LoggingInputAsSink extends Sink {
-    private Logging logging;
-
-    LoggingInputAsSink() { this = logging.getAnInput() }
+  private class LoggingInputAsSink extends Sink {
+    LoggingInputAsSink() {
+      // precise match based on inferred type of receiver
+      exists(Logging logging | this = logging.getAnInput()) or
+      // imprecise name based match
+      exists(DataFlow::CallNode call, string recvName |
+        recvName = call.getReceiver().asExpr().getExpr().(VariableReadAccess).getVariable().getName() and
+        recvName.regexpMatch(".*log(ger)?") and
+        call.getMethodName() = commonLogMethodName() |
+        this = call.getArgument(_)
+      )
+    }
   }
 }

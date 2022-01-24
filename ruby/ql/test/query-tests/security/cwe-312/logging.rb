@@ -55,3 +55,10 @@ password_masked_ineffective_gsub.gsub!(/[A-Z]/, "*")
 stdout_logger.info password_masked_ineffective_sub
 # BAD: password masked ineffectively
 stdout_logger.info password_masked_ineffective_gsub
+
+def foo(password, logger)
+  # BAD: password logged as plaintext
+  logger.info password
+end
+
+foo("65f2950df2f0e2c38d7ba2ccca767291", stdout_logger)

@@ -125,6 +125,7 @@ nodes
 | logging.rb:52:1:52:32 | password_masked_ineffective_gsub :  | semmle.label | password_masked_ineffective_gsub :  |
 | logging.rb:55:20:55:50 | password_masked_ineffective_sub | semmle.label | password_masked_ineffective_sub |
 | logging.rb:57:20:57:51 | password_masked_ineffective_gsub | semmle.label | password_masked_ineffective_gsub |
+| logging.rb:61:15:61:22 | password | semmle.label | password |
 subpaths
 #select
 | logging.rb:6:21:6:28 | password | logging.rb:6:21:6:28 | password | logging.rb:6:21:6:28 | password | $@ is logged here, src: logging.rb@6:21:6:28 sink: logging.rb@6:21:6:28 | logging.rb:6:21:6:28 | password | Sensitive data |
@@ -201,3 +202,4 @@ subpaths
 | logging.rb:55:20:55:50 | password_masked_ineffective_sub | logging.rb:55:20:55:50 | password_masked_ineffective_sub | logging.rb:55:20:55:50 | password_masked_ineffective_sub | $@ is logged here, src: logging.rb@55:20:55:50 sink: logging.rb@55:20:55:50 | logging.rb:55:20:55:50 | password_masked_ineffective_sub | Sensitive data |
 | logging.rb:57:20:57:51 | password_masked_ineffective_gsub | logging.rb:52:1:52:32 | password_masked_ineffective_gsub :  | logging.rb:57:20:57:51 | password_masked_ineffective_gsub | $@ is logged here, src: logging.rb@52:1:52:32 sink: logging.rb@57:20:57:51 | logging.rb:52:1:52:32 | password_masked_ineffective_gsub | Sensitive data |
 | logging.rb:57:20:57:51 | password_masked_ineffective_gsub | logging.rb:57:20:57:51 | password_masked_ineffective_gsub | logging.rb:57:20:57:51 | password_masked_ineffective_gsub | $@ is logged here, src: logging.rb@57:20:57:51 sink: logging.rb@57:20:57:51 | logging.rb:57:20:57:51 | password_masked_ineffective_gsub | Sensitive data |
+| logging.rb:61:15:61:22 | password | logging.rb:61:15:61:22 | password | logging.rb:61:15:61:22 | password | $@ is logged here, src: logging.rb@61:15:61:22 sink: logging.rb@61:15:61:22 | logging.rb:61:15:61:22 | password | Sensitive data |
