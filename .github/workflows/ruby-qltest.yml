@@ -24,7 +24,35 @@ defaults:
     working-directory: ruby
 
 jobs:
-  qltest:
+  qlformat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/fetch-codeql
+      - name: Check QL formatting
+        run: find ql "(" -name "*.ql" -or -name "*.qll" ")" -print0 | xargs -0 codeql query format --check-only
+  qlcompile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/fetch-codeql
+      - name: Check QL compilation
+        run: |
+          codeql query compile --check-only --threads=0 --warnings=error "ql/src" "ql/examples"
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+  qlupgrade:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/fetch-codeql
+      - name: Check DB upgrade scripts
+        run: |
+          echo >empty.trap
+          codeql dataset import -S ql/lib/upgrades/initial/ruby.dbscheme testdb empty.trap
+          codeql dataset upgrade testdb --additional-packs ql/lib
+          diff -q testdb/ruby.dbscheme ql/lib/ruby.dbscheme
+  qltest-1:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -32,19 +60,17 @@ jobs:
       - uses: ./ruby/actions/create-extractor-pack
       - name: Run QL tests
         run: |
-          codeql test run --search-path "${{ github.workspace }}/ruby/extractor-pack" --check-databases --check-unused-labels --check-repeated-labels --check-redefined-labels --check-use-before-definition --consistency-queries ql/consistency-queries ql/test
+          codeql test run --search-path "${{ github.workspace }}/ruby/extractor-pack" --check-databases --check-unused-labels --check-repeated-labels --check-redefined-labels --check-use-before-definition --consistency-queries ql/consistency-queries --slice 1/2 --threads 0 --ram 5000 ql/test
         env:
           GITHUB_TOKEN: ${{ github.token }}
-      - name: Check QL formatting
-        run: find ql "(" -name "*.ql" -or -name "*.qll" ")" -print0 | xargs -0 codeql query format --check-only
-      - name: Check QL compilation
+  qltest-2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/fetch-codeql
+      - uses: ./ruby/actions/create-extractor-pack
+      - name: Run QL tests
         run: |
-          codeql query compile --check-only --threads=4 --warnings=error "ql/src" "ql/examples"
+          codeql test run --search-path "${{ github.workspace }}/ruby/extractor-pack" --check-databases --check-unused-labels --check-repeated-labels --check-redefined-labels --check-use-before-definition --consistency-queries ql/consistency-queries --slice 2/2 --threads 0 --ram 5000 ql/test
         env:
           GITHUB_TOKEN: ${{ github.token }}
-      - name: Check DB upgrade scripts
-        run: |
-          echo >empty.trap
-          codeql dataset import -S ql/lib/upgrades/initial/ruby.dbscheme testdb empty.trap
-          codeql dataset upgrade testdb --additional-packs ql/lib
-          diff -q testdb/ruby.dbscheme ql/lib/ruby.dbscheme
