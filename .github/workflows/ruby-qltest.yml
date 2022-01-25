@@ -53,25 +53,17 @@ jobs:
           codeql dataset import -S ql/lib/upgrades/initial/ruby.dbscheme testdb empty.trap
           codeql dataset upgrade testdb --additional-packs ql/lib
           diff -q testdb/ruby.dbscheme ql/lib/ruby.dbscheme
-  qltest-1:
+  qltest:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        slice: ["1/2", "2/2"]
     steps:
       - uses: actions/checkout@v2
       - uses: ./.github/actions/fetch-codeql
       - uses: ./ruby/actions/create-extractor-pack
       - name: Run QL tests
         run: |
-          codeql test run --search-path "${{ github.workspace }}/ruby/extractor-pack" --check-databases --check-unused-labels --check-repeated-labels --check-redefined-labels --check-use-before-definition --consistency-queries ql/consistency-queries --slice 1/2 --threads 0 --ram 5000 ql/test
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-  qltest-2:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: ./.github/actions/fetch-codeql
-      - uses: ./ruby/actions/create-extractor-pack
-      - name: Run QL tests
-        run: |
-          codeql test run --search-path "${{ github.workspace }}/ruby/extractor-pack" --check-databases --check-unused-labels --check-repeated-labels --check-redefined-labels --check-use-before-definition --consistency-queries ql/consistency-queries --slice 2/2 --threads 0 --ram 5000 ql/test
+          codeql test run --search-path "${{ github.workspace }}/ruby/extractor-pack" --check-databases --check-unused-labels --check-repeated-labels --check-redefined-labels --check-use-before-definition --consistency-queries ql/consistency-queries --slice ${{ matrix.slice }} --threads 0 --ram 5000 ql/test
         env:
           GITHUB_TOKEN: ${{ github.token }}
