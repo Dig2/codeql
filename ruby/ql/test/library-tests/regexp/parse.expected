@@ -10,10 +10,10 @@ regexp.rb:
 
 #    5| [RegExpConstant, RegExpNormalChar] c
 
+#    8| [RegExpConstant, RegExpNormalChar] a
+
 #    8| [RegExpStar] a*
 #-----| 0 -> [RegExpConstant, RegExpNormalChar] a
-
-#    8| [RegExpConstant, RegExpNormalChar] a
 
 #    8| [RegExpSequence] a*b+c?d
 #-----| 0 -> [RegExpStar] a*
@@ -21,22 +21,22 @@ regexp.rb:
 #-----| 2 -> [RegExpOpt] c?
 #-----| 3 -> [RegExpConstant, RegExpNormalChar] d
 
+#    8| [RegExpConstant, RegExpNormalChar] b
+
 #    8| [RegExpPlus] b+
 #-----| 0 -> [RegExpConstant, RegExpNormalChar] b
 
-#    8| [RegExpConstant, RegExpNormalChar] b
+#    8| [RegExpConstant, RegExpNormalChar] c
 
 #    8| [RegExpOpt] c?
 #-----| 0 -> [RegExpConstant, RegExpNormalChar] c
 
-#    8| [RegExpConstant, RegExpNormalChar] c
-
 #    8| [RegExpConstant, RegExpNormalChar] d
+
+#    9| [RegExpConstant, RegExpNormalChar] a
 
 #    9| [RegExpRange] a{4,8}
 #-----| 0 -> [RegExpConstant, RegExpNormalChar] a
-
-#    9| [RegExpConstant, RegExpNormalChar] a
 
 #    9| [RegExpNormalChar] 4
 
@@ -46,10 +46,10 @@ regexp.rb:
 
 #    9| [RegExpNormalChar] }
 
+#   10| [RegExpConstant, RegExpNormalChar] a
+
 #   10| [RegExpRange] a{,8}
 #-----| 0 -> [RegExpConstant, RegExpNormalChar] a
-
-#   10| [RegExpConstant, RegExpNormalChar] a
 
 #   10| [RegExpNormalChar] ,
 
@@ -57,10 +57,10 @@ regexp.rb:
 
 #   10| [RegExpNormalChar] }
 
+#   11| [RegExpConstant, RegExpNormalChar] a
+
 #   11| [InfiniteRepetitionQuantifier, RegExpRange] a{3,}
 #-----| 0 -> [RegExpConstant, RegExpNormalChar] a
-
-#   11| [RegExpConstant, RegExpNormalChar] a
 
 #   11| [RegExpNormalChar] 3
 
@@ -68,20 +68,20 @@ regexp.rb:
 
 #   11| [RegExpNormalChar] }
 
+#   12| [RegExpConstant, RegExpNormalChar] a
+
 #   12| [RegExpRange] a{7}
 #-----| 0 -> [RegExpConstant, RegExpNormalChar] a
-
-#   12| [RegExpConstant, RegExpNormalChar] a
 
 #   12| [RegExpNormalChar] 7
 
 #   12| [RegExpNormalChar] }
 
+#   15| [RegExpConstant, RegExpNormalChar] f
+
 #   15| [RegExpAlt] foo|bar
 #-----| 0 -> [RegExpSequence] foo
 #-----| 1 -> [RegExpSequence] bar
-
-#   15| [RegExpConstant, RegExpNormalChar] f
 
 #   15| [RegExpSequence] foo
 #-----| 0 -> [RegExpConstant, RegExpNormalChar] f
@@ -164,10 +164,10 @@ regexp.rb:
 
 #   20| [RegExpConstant, RegExpNormalChar] -
 
+#   20| [RegExpCharacterClassEscape] \d
+
 #   20| [RegExpPlus] \d+
 #-----| 0 -> [RegExpCharacterClassEscape] \d
-
-#   20| [RegExpCharacterClassEscape] \d
 
 #   21| [RegExpCharacterClass] [\w]
 #-----| 0 -> [RegExpCharacterClassEscape] \w
@@ -252,20 +252,20 @@ regexp.rb:
 
 #   29| [RegExpConstant, RegExpNormalChar] ]
 
-#   32| [RegExpStar] .*
-#-----| 0 -> [RegExpDot] .
-
 #   32| [RegExpDot] .
 
-#   33| [RegExpStar] .*
+#   32| [RegExpStar] .*
 #-----| 0 -> [RegExpDot] .
 
 #   33| [RegExpDot] .
 
-#   34| [RegExpPlus] \w+
-#-----| 0 -> [RegExpCharacterClassEscape] \w
+#   33| [RegExpStar] .*
+#-----| 0 -> [RegExpDot] .
 
 #   34| [RegExpCharacterClassEscape] \w
+
+#   34| [RegExpPlus] \w+
+#-----| 0 -> [RegExpCharacterClassEscape] \w
 
 #   34| [RegExpSequence] \w+\W
 #-----| 0 -> [RegExpPlus] \w+
@@ -379,11 +379,11 @@ regexp.rb:
 #   46| [RegExpGroup] (o|b)
 #-----| 0 -> [RegExpAlt] o|b
 
+#   46| [RegExpConstant, RegExpNormalChar] o
+
 #   46| [RegExpAlt] o|b
 #-----| 0 -> [RegExpConstant, RegExpNormalChar] o
 #-----| 1 -> [RegExpConstant, RegExpNormalChar] b
-
-#   46| [RegExpConstant, RegExpNormalChar] o
 
 #   46| [RegExpConstant, RegExpNormalChar] b
 
@@ -398,12 +398,12 @@ regexp.rb:
 #-----| 0 -> [RegExpGroup] (a|b|cd)
 #-----| 1 -> [RegExpConstant, RegExpNormalChar] e
 
+#   47| [RegExpConstant, RegExpNormalChar] a
+
 #   47| [RegExpAlt] a|b|cd
 #-----| 0 -> [RegExpConstant, RegExpNormalChar] a
 #-----| 1 -> [RegExpConstant, RegExpNormalChar] b
 #-----| 2 -> [RegExpSequence] cd
-
-#   47| [RegExpConstant, RegExpNormalChar] a
 
 #   47| [RegExpConstant, RegExpNormalChar] b
 
@@ -424,20 +424,20 @@ regexp.rb:
 #-----| 0 -> [RegExpGroup] (?::+)
 #-----| 1 -> [RegExpCharacterClassEscape] \w
 
+#   48| [RegExpConstant, RegExpNormalChar] :
+
 #   48| [RegExpPlus] :+
 #-----| 0 -> [RegExpConstant, RegExpNormalChar] :
-
-#   48| [RegExpConstant, RegExpNormalChar] :
 
 #   48| [RegExpCharacterClassEscape] \w
 
 #   51| [RegExpGroup] (?<id>\w+)
 #-----| 0 -> [RegExpPlus] \w+
 
+#   51| [RegExpCharacterClassEscape] \w
+
 #   51| [RegExpPlus] \w+
 #-----| 0 -> [RegExpCharacterClassEscape] \w
-
-#   51| [RegExpCharacterClassEscape] \w
 
 #   52| [RegExpGroup] (?'foo'fo+)
 #-----| 0 -> [RegExpSequence] fo+
@@ -448,10 +448,10 @@ regexp.rb:
 #-----| 0 -> [RegExpConstant, RegExpNormalChar] f
 #-----| 1 -> [RegExpPlus] o+
 
+#   52| [RegExpConstant, RegExpNormalChar] o
+
 #   52| [RegExpPlus] o+
 #-----| 0 -> [RegExpConstant, RegExpNormalChar] o
-
-#   52| [RegExpConstant, RegExpNormalChar] o
 
 #   55| [RegExpGroup] (a+)
 #-----| 0 -> [RegExpPlus] a+
@@ -461,15 +461,15 @@ regexp.rb:
 #-----| 1 -> [RegExpPlus] b+
 #-----| 2 -> [RegExpBackRef] \1
 
+#   55| [RegExpConstant, RegExpNormalChar] a
+
 #   55| [RegExpPlus] a+
 #-----| 0 -> [RegExpConstant, RegExpNormalChar] a
 
-#   55| [RegExpConstant, RegExpNormalChar] a
+#   55| [RegExpConstant, RegExpNormalChar] b
 
 #   55| [RegExpPlus] b+
 #-----| 0 -> [RegExpConstant, RegExpNormalChar] b
-
-#   55| [RegExpConstant, RegExpNormalChar] b
 
 #   55| [RegExpBackRef] \1
 
@@ -481,15 +481,15 @@ regexp.rb:
 #-----| 1 -> [RegExpPlus] \s+
 #-----| 2 -> [RegExpPlus] \k<qux>+
 
+#   56| [RegExpConstant, RegExpNormalChar] q
+
 #   56| [RegExpPlus] q+
 #-----| 0 -> [RegExpConstant, RegExpNormalChar] q
 
-#   56| [RegExpConstant, RegExpNormalChar] q
+#   56| [RegExpCharacterClassEscape] \s
 
 #   56| [RegExpPlus] \s+
 #-----| 0 -> [RegExpCharacterClassEscape] \s
-
-#   56| [RegExpCharacterClassEscape] \s
 
 #   56| [RegExpBackRef] \k<qux>
 
